@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-color: #FFAA27;
+  box-shadow: 0 0 30px #000000aa;
+  backdrop-filter: blur(10px);
+  z-index: 99;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.logo img {
+  width: 20rem;
+}
+
+.highlight {
+  width: 95%;
+  margin: 1.2rem 0 0 0.4rem;
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: 1.45;
+  color: #FFAA27;
+}
+
+nav a {
+  margin: 3rem;
+  padding-bottom: 0.2rem;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  color: #F5821E;
+}
+
+nav a:active {
+  opacity: 0.6;
+}
+
+.hero-container,
+.hero-container2 {
+  padding-top: 11rem;
+  background-size: cover;
+  background-position: center;
+  height: 250vh;
+}
+
+.hero-container {
+  background-image: linear-gradient(to bottom, transparent 90%, #090403 100%), url("./assets/copel background 3.png");
+}
+
+.hero-container2 {
+  background-image: linear-gradient(to bottom, transparent 90%, #090403 100%), url("./assets/copel backgroud 4 (1).png");
+}
+
+.inner-hero,
+.inner-hero2,
+.inner-hero3,
+.inner-hero4 {
+  max-width: 100%;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inner-hero {
+  height: 90vh;
+  padding-top: 60px;
+}
+
+.inner-hero2 {
+  height: 140vh;
+}
+
+.inner-hero3 {
+  height: 100vh;
+}
+
+.inner-hero4 {
+  height: 140vh;
+}
+
+.inner-hero h2,
+.inner-hero2 h2,
+.inner-hero3 h2,
+.inner-hero4 h2 {
+  font-size: 4.2rem;
+  font-weight: 900;
+  line-height: 1;
+  word-spacing: -0.5rem;
+}
+
+.inner-hero h2 {
+  color: #fff;
+}
+
+.inner-hero2 h2,
+.inner-hero3 h2,
+.inner-hero4 h2 {
+  color: #F5821E;
+}
+
+.inner-hero li,
+.inner-hero2 li,
+.inner-hero3 li,
+.inner-hero4 li {
+  width: 95%;
+  margin: 1.2rem 0 0 0.4rem;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #eee;
+}
+
+.title-oque,
+.title-porque,
+.title-como,
+.title-resultado {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5821E;
+}
+
+.inner-hero2 .title-porque,
+.inner-hero3 .title-como,
+.inner-hero4 .title-resultado {
+  background-color: #fff;
+}
+
+.p-oque,
+.p-porque,
+.p-como,
+.p-resultado {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding-left: 40px;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li::before {
+  content: '';
+  background-image: url('assets/1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -40px;
+  width: 40px;
+  height: 25px;
+}
+
+.text {
+  width: 40%;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+
+.text h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #F5821E;
+}
+
+.text p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 2rem 0 1rem;
+  line-height: 1.5;
+  color: #eee;
+}
+
+.title {
+  font-size: 5.2rem;
+  font-weight: 800;
+  color: #F5821E;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+  background: #F5821E;
+  cursor: default;
+}
+
+footer h3,
+footer h4 {
+  padding: 0;
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+footer i {
+  font-size: 1.6rem;
+  padding: 0 0 0.5rem 0.3rem;
+  transition: 0.5s;
+}
+
+footer i:hover {
+  transform: translateY(-5px);
+}
+
+footer a {
+  font-size: 1.4rem;
+  color: #F5821E;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:active {
+  opacity: .7;
+}
+
+@media screen and (max-width: 1350px) {
+  .carousel {
+    max-width: 830px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 15rem;
+  }
+
+  nav a {
+    font-size: 1.8rem;
+  }
+
+  .highlight {
+    font-size: 1.6rem;
+  }
+
+  .inner-hero h2,
+  .inner-hero2 h2 {
+    font-size: 3.5rem;
+  }
+
+  .inner-hero p,
+  .inner-hero2 p {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .text h2 {
+    font-size: 3rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav a {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  .inner-hero {
+    height: 100vh;
+  }
+
+  .inner-hero2 {
+    height: 150vh;
+  }
+
+  .inner-hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .inner-hero p {
+    font-size: 1.3rem;
+  }
+
+  .text h2 {
+    font-size: 2.5rem;
+  }
+
+  .text p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav a {
+    font-size: 1.4rem;
+    margin: 0.5rem;
+  }
+
+  .inner-hero {
+    height: auto;
+  }
+
+  .inner-hero2 {
+    height: 150vh;
+  }
+
+  .inner-hero p {
+    font-size: 2rem;
+  }
+
+  .text h2 {
+    font-size: 2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 1px;
+  }
+
+  .title-oque,
+  .title-porque,
+  .title-como,
+  .title-resultado {
+    width: 60vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5821E;
+  }
+
+  .text p {
+    font-size: 1.2rem;
+  }
+}
