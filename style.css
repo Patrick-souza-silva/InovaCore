@@ -376,8 +376,8 @@ footer a:active {
   .title-porque,
   .title-como,
   .title-resultado {
-    width: 60vw;
-    height: 10vh;
+    width: 65vw;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -388,59 +388,117 @@ footer a:active {
     font-size: 1.2rem;
   }
 
-@media screen and (max-width: 375px) {
-  nav a {
-    font-size: 1rem;
-    margin: 0.5rem;
+
+
+  @media screen and (min-width: 376px) and (max-width: 390px) {
+    nav a {
+      font-size: 2rem;
+      margin: 0.5rem;
+    }
+
+    .inner-hero {
+      height: auto;
+    }
+
+    .inner-hero2 {
+      height: 120vh;
+    }
+
+    .inner-hero p {
+      font-size: 2rem;
+    }
+
+    .text h2 {
+      font-size: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 2px;
+    }
+
+    .title-oque,
+    .title-porque,
+    .title-como,
+    .title-resultado {
+      width: 70vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F5821E;
+    }
+
+    .inner-hero li,
+    .inner-hero2 li,
+    .inner-hero3 li,
+    .inner-hero4 li {
+      width: 95%;
+      margin: 1.2rem 0 0 0.4rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.45;
+      color: #eee;
+    }
+
+    .text p {
+      font-size: 1.2rem;
+    }
   }
 
-  .inner-hero {
-    height: auto;
-  }
+  @media screen and (max-width: 375px) {
+    nav a {
+      font-size: 1rem;
+      margin: 0.5rem;
+    }
 
-  .inner-hero2 {
-    height: 120vh;
-  }
+    .inner-hero {
+      height: auto;
+    }
 
-  .inner-hero p {
-    font-size: 1rem;
-  }
+    .inner-hero2 {
+      height: 120vh;
+    }
 
-  .text h2 {
-    font-size: 1rem;
-  }
+    .inner-hero p {
+      font-size: 1rem;
+    }
 
-  ul {
-    list-style: none;
-    padding-left: 1px;
-  }
+    .text h2 {
+      font-size: 1rem;
+    }
 
-  .title-oque,
-  .title-porque,
-  .title-como,
-  .title-resultado {
-    width: 70vw;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F5821E;
-  }
+    ul {
+      list-style: none;
+      padding-left: 1px;
+    }
 
-  .inner-hero li,
-.inner-hero2 li,
-.inner-hero3 li,
-.inner-hero4 li {
-  width: 95%;
-  margin: 1.2rem 0 0 0.4rem;
-  font-size: 1.3rem;
-  font-weight: 400;
-  line-height: 1.45;
-  color: #eee;
-}
+    .title-oque,
+    .title-porque,
+    .title-como,
+    .title-resultado {
+      width: 70vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F5821E;
+    }
 
-  .text p {
-    font-size: 1.2rem;
+    .inner-hero li,
+    .inner-hero2 li,
+    .inner-hero3 li,
+    .inner-hero4 li {
+      width: 95%;
+      margin: 1.2rem 0 0 0.4rem;
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.45;
+      color: #eee;
+    }
+
+    .text p {
+      font-size: 1.2rem;
+    }
   }
-}
 }
