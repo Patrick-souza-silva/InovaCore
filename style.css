@@ -31,6 +31,7 @@ header {
   align-items: center;
   justify-content: center;
   padding-bottom: 10px;
+  pointer-events: none;
 }
 
 .logo img {
@@ -386,4 +387,60 @@ footer a:active {
   .text p {
     font-size: 1.2rem;
   }
+
+@media screen and (max-width: 375px) {
+  nav a {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+
+  .inner-hero {
+    height: auto;
+  }
+
+  .inner-hero2 {
+    height: 120vh;
+  }
+
+  .inner-hero p {
+    font-size: 1rem;
+  }
+
+  .text h2 {
+    font-size: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 1px;
+  }
+
+  .title-oque,
+  .title-porque,
+  .title-como,
+  .title-resultado {
+    width: 70vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5821E;
+  }
+
+  .inner-hero li,
+.inner-hero2 li,
+.inner-hero3 li,
+.inner-hero4 li {
+  width: 95%;
+  margin: 1.2rem 0 0 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #eee;
+}
+
+  .text p {
+    font-size: 1.2rem;
+  }
+}
 }
